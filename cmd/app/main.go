@@ -1,7 +1,7 @@
 package main
 
-import "fmt"
+import "Pakuchi/pkg/cores/gb_core"
 
 func main() {
-	fmt.Println("Hello World!")
+	gb_core.HelloWorld()
 }
