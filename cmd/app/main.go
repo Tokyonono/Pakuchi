@@ -1,7 +1,10 @@
 package main
 
-import "Pakuchi/pkg/cores/gb_core"
+import (
+	"Pakuchi/pkg/cores/gb_core"
+)
 
 func main() {
-	gb_core.HelloWorld()
+	path := ""
+	gb_core.Run(path)
 }
