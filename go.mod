@@ -1,11 +1,11 @@
 module Pakuchi
 
-go 1.23.6
+go 1.24.0
 
-require github.com/gen2brain/raylib-go/raylib v0.0.0-20250109172833-6dbba4f81a9b
+require github.com/gen2brain/raylib-go/raylib v0.0.0-20250215042252-db8e47f0e5c5
 
 require (
 	github.com/ebitengine/purego v0.8.2 // indirect
-	golang.org/x/exp v0.0.0-20250207012021-f9890c6ad9f3 // indirect
+	golang.org/x/exp v0.0.0-20250210185358-939b2ce775ac // indirect
 	golang.org/x/sys v0.30.0 // indirect
 )
