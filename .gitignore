@@ -1,28 +1,49 @@
-# If you prefer the allow list template instead of the deny list, see community template:
-# https://github.com/github/gitignore/blob/main/community/Golang/Go.AllowList.gitignore
-#
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
+# ── Odin build artifacts ──────────────────────────────────────────
+bin/
+build/
+*.o
+*.a
 *.so
 *.dylib
+*.dll
+*.exe
+*.pdb
+*.ilk
+*.map
 
-# Test binary, built with `go test -c`
-*.test
+# ── SDL3 local installs (if vendored) ────────────────────────────
+vendor/SDL3/lib/
+vendor/SDL3/bin/
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
-
-# Dependency directories (remove the comment below to include it)
-# vendor/
-
-# Go workspace file
-go.work
-go.work.sum
-
-# Mac DS_Store
+# ── OS garbage ───────────────────────────────────────────────────
 .DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*~
+.directory
 
-# VS Code settings
-.vscode/settings.json
+# ── Editor / IDE ─────────────────────────────────────────────────
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.iml
+*.swp
+*.swo
+.nvim/
+\#*\#
+.\#*
+
+# ── Emulator data ────────────────────────────────────────────────
+roms/
+saves/
+logs/
+crash_dumps/
+
+# ── Misc ─────────────────────────────────────────────────────────
+.env
+*.log
+*.tmp
